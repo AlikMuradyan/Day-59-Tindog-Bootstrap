@@ -32,7 +32,7 @@ p {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -64,15 +64,37 @@ p {
 
 /*title-image*/
 
+.iphone-container{
+    position: relative;
+}
+
 .title-image {
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 25%;
 }
+
+@media (max-width: 991px) {
+
+#title {
+    text-align: center;
+}
+
+.title-image {
+    position: static;
+    transform: rotate(0);
+}
+}
+
+
 
 /*feature section*/
 
 #features {
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-box {
